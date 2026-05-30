@@ -1,0 +1,57 @@
+site_name: LongwoodGeek Games
+site_url: https://games.longwoodgeek.net
+site_description: Gaming collection, preservation notes, exhibits, and inventory projects from LongwoodGeek.
+site_author: Gerald Martin / LongwoodGeek
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Collection:
+      - Overview: collection/index.md
+      - Public Catalog: collection/public-catalog.md
+      - Platforms: collection/platforms.md
+      - Hardware: collection/hardware.md
+      - Wanted List: collection/wanted.md
+      - Trade / Sale: collection/trade-sale.md
+  - Preservation:
+      - Notes: preservation/index.md
+      - Disk Imaging: preservation/disk-imaging.md
+      - Console / Cartridge Notes: preservation/console-cartridge-notes.md
+      - Media Archive: preservation/media-archive.md
+  - Exhibits:
+      - Overview: exhibits/index.md
+      - Star Trek Games: exhibits/star-trek-games.md
+      - Apple II Collection: exhibits/apple-ii.md
+      - Softdisk Archive: exhibits/softdisk.md
+      - Sci-Fi Games: exhibits/sci-fi-games.md
+  - Gaming Historia:
+      - Overview: gaming-historia/index.md
+      - Developer Spotlights: gaming-historia/developer-spotlights.md
+      - Historical Context: gaming-historia/historical-context.md
+      - Preservation and Access: gaming-historia/preservation-access.md
+  - Devlog:
+      - Updates: devlog/index.md
+  - About:
+      - About This Site: about.md
+      - Contact: contact.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+
+plugins:
+  - search
