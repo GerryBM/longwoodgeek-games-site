@@ -3,10 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
+        - python --version
         - pip install mkdocs-material
     build:
       commands:
-        - mkdocs build
+        - mkdocs build --strict
+        - ls -la site
   artifacts:
     baseDirectory: site
     files:
